@@ -13,7 +13,7 @@ interface HeaderProps {
 
 export default function Header({ 
   phone = "+917514085202", 
-  schoolName = "Rani Avanti Bai Higher Secondary School",
+  schoolName = "Rani Awanti Bai Higher Secondary School",
   logoUrl 
 }: HeaderProps) {
   const pathname = usePathname();

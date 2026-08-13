@@ -34,7 +34,7 @@ export default async function AboutPage() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1 className={styles.title}>About Rani Avanti Bai Higher Secondary School</h1>
+        <h1 className={styles.title}>About Rani Awanti Bai Higher Secondary School</h1>
         <p className={styles.subtitle} style={{ whiteSpace: "pre-wrap", maxWidth: "800px", margin: "0 auto" }}>{aboutText}</p>
       </div>
 

@@ -24,6 +24,9 @@ export default async function PublicLayout({
       .where(eq(announcements.isActive, true))
       .orderBy(asc(announcements.displayOrder));
     announcementTexts = rows.map((r) => r.text);
+    if (announcementTexts.length === 0) {
+      announcementTexts = ["Welcome to Rani Awanti Bai Higher Secondary School — Admissions Open 2025-26!"];
+    }
 
     const contactRows = await db.select().from(contactInfo).limit(1);
     if (contactRows.length > 0) contact = contactRows[0];
@@ -36,7 +39,7 @@ export default async function PublicLayout({
     // fallback if DB fails
   }
 
-  const schoolName = settingsMap["school_name"] || "Rani Avanti Bai Higher Secondary School";
+  const schoolName = settingsMap["school_name"] || "Rani Awanti Bai Higher Secondary School";
   const tagline = settingsMap["school_tagline"] || "Empowering Minds · Shaping Futures · Building Leaders";
   const logoUrl = settingsMap["school_logo_url"] || "";
   const phone = contact?.phone || "+917514085202";

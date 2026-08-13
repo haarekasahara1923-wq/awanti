@@ -14,7 +14,7 @@ export default function HeroSettings() {
       fetch("/api/settings").then(r => r.json())
     ]).then(([galleryData, settingsData]) => {
       if (galleryData.success) {
-        setGallery(galleryData.data.filter((item: any) => item.type === "photo"));
+        setGallery(galleryData.items.filter((item: any) => item.type === "photo"));
       }
       if (settingsData.success) {
         const heroSetting = settingsData.settings.find((s: any) => s.key === "hero_image_url");
@@ -22,6 +22,8 @@ export default function HeroSettings() {
           setCurrentHero(heroSetting.value);
         }
       }
+      setLoading(false);
+    }).catch(() => {
       setLoading(false);
     });
   }, []);

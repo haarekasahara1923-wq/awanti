@@ -16,7 +16,7 @@ export default async function ContactPage() {
   const phone = info?.phone || "+917514085202";
   const whatsapp = info?.whatsapp || "917974655576";
   const email = info?.email || "raniawanti@gmail.com";
-  const address = info?.address || "Rani Avanti Bai Higher Secondary School, D-13,Sector -D,DDNagar,Gwalior(MP)";
+  const address = info?.address || "Rani Awanti Bai Higher Secondary School, D-13,Sector -D,DDNagar,Gwalior(MP)";
   const mapUrl =
     info?.mapEmbedUrl ||
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14316.517336782298!2d78.22687135!3d26.22495865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c6b3e9458fcd%3A0xc6651261d7b05615!2sMorar%2C%20Gwalior%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin";

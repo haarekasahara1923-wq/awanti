@@ -11,7 +11,7 @@ interface FooterProps {
 }
 
 export default function Footer({
-  schoolName = "Rani Avanti Bai Higher Secondary School",
+  schoolName = "Rani Awanti Bai Higher Secondary School",
   tagline = "Empowering Minds · Shaping Futures · Building Leaders",
   address = "D-13,Sector -D,DDNagar,Gwalior(MP)",
   phone = "+917514085202",
